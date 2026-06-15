@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { gsap, prefersReducedMotion } from "../lib/gsap";
-import { FORMSPREE_ENDPOINT, WHATSAPP_URL, CONTACT_EMAIL } from "../config";
+import { FORMSPREE_ENDPOINT, WHATSAPP_NUMBERS, CONTACT_EMAIL } from "../config";
 
 const SERVICE_OPTIONS = [
   "Desarrollo Web",
@@ -101,14 +101,20 @@ export default function Contact({ selectedService, setSelectedService, onOpenPri
               </svg>
               <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
             </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z" />
-              </svg>
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener">
-                WhatsApp: escríbenos directamente
-              </a>
-            </li>
+            {WHATSAPP_NUMBERS.map((w) => (
+              <li key={w.number}>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z" />
+                </svg>
+                <a
+                  href={`https://wa.me/${w.number}`}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  WhatsApp {w.label}
+                </a>
+              </li>
+            ))}
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z" />
