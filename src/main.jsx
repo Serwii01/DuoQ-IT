@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 
 // Hojas de estilo globales (reutilizadas del proyecto original)
@@ -13,9 +13,10 @@ document.documentElement.classList.add("js-ready");
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* HashRouter: sin configuración de servidor, perfecto para GitHub Pages */}
-    <HashRouter>
+    {/* BrowserRouter: URLs limpias (/blog). En GitHub Pages, el 404.html
+        (copia del index generado) sirve la SPA en rutas directas. */}
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );

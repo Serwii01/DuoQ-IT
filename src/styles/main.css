@@ -526,6 +526,7 @@ body::before {
 
 .about__statement .word {
   display: inline-block;
+  margin-right: 0.28em;
 }
 
 .about__statement strong {
@@ -573,9 +574,19 @@ body::before {
 }
 
 .pillar__icon {
-  font-size: 1.8rem;
-  line-height: 1;
   margin-bottom: 1.1rem;
+  color: var(--color-accent-electric);
+}
+
+.pillar__icon svg {
+  width: 34px;
+  height: 34px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 10px var(--color-accent-glow));
 }
 
 .pillar h3 {

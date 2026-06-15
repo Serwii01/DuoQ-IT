@@ -120,7 +120,7 @@ export default function Contact({ selectedService, setSelectedService, onOpenPri
                 <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              <span>Trabajo remoto · España</span>
+              <span>Sevilla · Trabajo remoto en toda España</span>
             </li>
           </ul>
         </div>

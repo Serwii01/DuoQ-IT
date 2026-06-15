@@ -3,17 +3,33 @@ import { gsap, prefersReducedMotion } from "../lib/gsap";
 
 const PILLARS = [
   {
-    icon: "⚡",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <polygon points="13 2 4 14 11 14 10 22 20 10 13 10 13 2" />
+      </svg>
+    ),
     title: "Rapidez sin sacrificar calidad",
     text: "Entregamos proyectos en días, no meses. Sin reuniones innecesarias ni burocracia.",
   },
   {
-    icon: "🤝",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.6A8.38 8.38 0 0 1 4 11.5a8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        <path d="M8 11h.01M12 11h.01M16 11h.01" />
+      </svg>
+    ),
     title: "Trato directo, siempre",
     text: "Hablas con quien desarrolla. Sin cuentas, sin project managers de intermediario.",
   },
   {
-    icon: "📊",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 3v18h18" />
+        <rect x="7" y="12" width="3" height="5" rx="0.5" />
+        <rect x="12.5" y="8" width="3" height="9" rx="0.5" />
+        <rect x="18" y="5" width="3" height="12" rx="0.5" />
+      </svg>
+    ),
     title: "Resultados medibles",
     text: "Cada proyecto tiene un objetivo claro. No vendemos webs: vendemos más clientes para tu negocio.",
   },

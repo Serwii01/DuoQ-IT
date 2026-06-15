@@ -3,8 +3,8 @@ import { useSectionNav } from "../hooks/useSectionNav";
 
 const LINKS = [
   { id: "inicio", label: "Inicio" },
-  { id: "servicios", label: "Servicios" },
   { id: "nosotros", label: "Nosotros" },
+  { id: "servicios", label: "Servicios" },
   { id: "contacto", label: "Contacto" },
 ];
 
