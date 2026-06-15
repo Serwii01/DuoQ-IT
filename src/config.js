@@ -2,7 +2,7 @@
    Reemplaza estos valores antes de publicar. */
 
 // ID de Formspree: crea un form en formspree.io y pega aquí tu endpoint.
-export const FORMSPREE_ENDPOINT = "https://formspree.io/f/XXXXXXXX";
+export const FORMSPREE_ENDPOINT = "https://formspree.io/f/xdavbjky";
 
 // Números de WhatsApp con prefijo de país, sin signos ni espacios.
 export const WHATSAPP_NUMBERS = [
